@@ -1,4 +1,7 @@
 💙 **SSAFY 서울_10반 알고리즘 스터디** 💙
+<br>
+
+![image](https://github.com/user-attachments/assets/1df2cff3-be83-4543-91d8-8f04256f4647)
 
 <br>
 
