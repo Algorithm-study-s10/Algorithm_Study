@@ -1,4 +1,4 @@
-package org.example.yhs3237;
+package org.example.yhs3237.w01_n2Array;
 
 public class n2Array {
 //       public static int[] solution(int n, long left, long right) {
