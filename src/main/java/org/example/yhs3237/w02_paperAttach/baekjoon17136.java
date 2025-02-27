@@ -1,3 +1,5 @@
+package org.example.yhs3237.w02_paperAttach;
+
 import java.io.*;
 import java.math.BigInteger;
 import java.util.StringTokenizer;

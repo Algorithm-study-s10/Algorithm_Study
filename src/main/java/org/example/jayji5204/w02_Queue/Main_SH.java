@@ -1,3 +1,4 @@
+package org.example.jayji5204.w02_Queue;
 import java.io.File;
 
 import java.util.ArrayDeque;
@@ -12,7 +13,7 @@ import java.util.List;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main_SH {
 
 	public static void main(String[] args) throws Exception {
 

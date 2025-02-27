@@ -1,8 +1,9 @@
+package org.example.jayji5204.w02_Top;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Main_SH {
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 //		Scanner sc = new Scanner(new File("input.txt"));

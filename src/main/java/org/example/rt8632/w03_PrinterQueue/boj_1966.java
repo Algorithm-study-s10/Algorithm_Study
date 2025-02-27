@@ -1,4 +1,4 @@
-package algorithm;
+package org.example.rt8632.w03_PrinterQueue;
 
 import java.util.LinkedList;
 import java.util.Queue;

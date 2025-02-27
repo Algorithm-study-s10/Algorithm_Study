@@ -1,3 +1,4 @@
+package org.example.jayji5204.w02_Top;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
