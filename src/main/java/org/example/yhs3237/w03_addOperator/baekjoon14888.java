@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class baekjoon14888 {
     static int N; // 숫자의 개수
     static int max = Integer.MIN_VALUE; // 연산 결과의 최대값
     static int min = Integer.MAX_VALUE; // 연산 결과의 최소값
