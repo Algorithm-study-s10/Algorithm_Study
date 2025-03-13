@@ -94,3 +94,22 @@ public class Main {
 	}
 
 }
+
+////주자 출루
+//for (Map.Entry<Integer, Integer> entry : base.entrySet()) {
+//    base.put(entry.getKey(), entry.getValue() + attack);
+//}
+//base.put(idx, attack);
+//
+////득점 주자 정리 
+//PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>(
+//        (a, b) -> Integer.compare(a.getValue(), b.getValue()) // value 기준 오름차순 정렬
+//    );
+//pq.addAll(base.entrySet());
+//
+//while (!pq.isEmpty() && pq.peek().getValue() >= 4) {
+//    base.remove(pq.peek().getKey());
+//    pq.poll();
+//    inningScore++;
+//}
+
