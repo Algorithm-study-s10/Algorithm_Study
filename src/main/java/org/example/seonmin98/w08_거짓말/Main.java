@@ -31,17 +31,12 @@ public class Main {
 		for (int i = 0; i < m; i++) {
 			st = new StringTokenizer(br.readLine());
 			int size = Integer.parseInt(st.nextToken());
-			PriorityQueue<Integer> party = new PriorityQueue<>(); //참석자 대표를 가장 낮은 번호로 설정하기 위한 우선순위 큐
-			for (int p = 0; p < size; p++) {
-				int person = Integer.parseInt(st.nextToken());
-				party.add(person);
+			int owner = Integer.parseInt(st.nextToken()); //파티의 대표자
+			for (int p = 1; p < size; p++) {
+				int participant = Integer.parseInt(st.nextToken()); //파티의 참석자
+				union(findSet(owner), findSet(participant)); //파티의 대표자와 참석자 그룹으로 연결
 			}
-			int owner = party.poll();
-			while (!party.isEmpty()) {
-				int participant = party.poll();
-				union(findSet(owner), findSet(participant));
-			}
-			parties[i] = owner;
+			parties[i] = owner; //파티의 대표자 배열에 저장
 		}
 		
 		int cnt = 0;
