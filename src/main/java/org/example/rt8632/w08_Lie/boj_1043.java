@@ -52,8 +52,6 @@ public class boj_1043 {
 			//모임별로 진실을 아는 사람이 있는지 탐색
 			for(int t : graph.get(i)) {
 				for(int j=0;j<a;j++) {
-					//if(t == truth[j])
-						//lie = true;
 					int x = findSet(t);
 					int y = findSet(truth[j]);
 					if(x == y)
