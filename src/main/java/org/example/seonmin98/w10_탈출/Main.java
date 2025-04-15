@@ -106,9 +106,9 @@ public class Main {
 			for (int x = 0; x < width; x++) {
 				if (map[y][x].equals("*")) waters.add(new int[] {y, x});
 			}
-		}
+		} //일단 현시점 기준으로 물위치를 파악
 		
-		for (int[] cur : waters) {
+		for (int[] cur : waters) { //현시점 기준에서 물인 위치에서만 상하좌우 확장
 			int cy = cur[0];
 			int cx = cur[1];
 			
