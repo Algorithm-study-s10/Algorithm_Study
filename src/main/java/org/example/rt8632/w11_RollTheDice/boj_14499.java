@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class boj_14499 {
+
 	//동, 서, 북, 남
 	static int[] dy = { 1, -1, 0, 0 };
 	static int[] dx = { 0, 0, 1, -1 };
@@ -90,3 +91,4 @@ public class boj_14499 {
 
 	}
 }
+
