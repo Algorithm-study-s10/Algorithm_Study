@@ -23,8 +23,9 @@ public class Main {
 		notyet = 0;
 		Queue<int[]> queue = new LinkedList<>();
 		for (int z = 0; z < H; z++) {
-			st = new StringTokenizer(br.readLine());
+			
 			for (int y = 0; y < N; y++) {
+				st = new StringTokenizer(br.readLine());
 				for (int x = 0; x < M; x++) {
 					arr[z][y][x] = Integer.parseInt(st.nextToken());
 					if (arr[z][y][x] == 0) notyet++;
@@ -35,10 +36,40 @@ public class Main {
 			}
 		} // 1: 익은 토마토, 0: 익지 않은 토마토, -1: 토마토가 들어있지 않은 칸
 		
+		
+		if (notyet == 0) {
+			System.out.println(0);
+			return;
+		} //저장될 때부터 모든 토마토가 익어있는 상
+		
+		int date = 0;
 		while (!queue.isEmpty()) {
+			date++;
+			List<int[]> list = new ArrayList<>();
+			while (!queue.isEmpty()) {
+				list.add(queue.poll());
+			}
 			
+			for (int[] cur : list) {
+				for (int i = 0; i < 6; i++) {
+					int nz = cur[0] + dz[i];
+					int ny = cur[1] + dy[i];
+					int nx = cur[2] + dx[i];
+					
+					if (!isInArr(nz, ny, nx) || arr[nz][ny][nx] != 0) continue;
+					arr[nz][ny][nx] = 1;
+					notyet--;
+					queue.add(new int[] {nz, ny, nx});
+				}
+			}
 		}
 		
 		if (notyet != 0) System.out.println(-1);
+		else System.out.println(date - 1);
+	}
+
+	private static boolean isInArr(int nz, int ny, int nx) {
+		if (nz < 0 || nz >= H || ny < 0 || ny >= N || nx < 0 || nx >= M) return false;
+		return true;
 	}
 }
